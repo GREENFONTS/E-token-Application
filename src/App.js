@@ -1,8 +1,7 @@
 // import "./App.css";
 import Home from "./Pages/Home";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import LoanAppView from "./Pages/LoanAppView";
-import { ChakraProvider } from "@chakra-ui/react";
+import LoanAppDashboard from "./Pages/LoanAppDashboard";
 
 const App = () => {
   return (
@@ -10,7 +9,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="Gowns" element={<LoanAppView />}></Route>
+        <Route path="/LoanDashboard" element={<LoanAppDashboard />}></Route>
         {/* <Route path="Polo" element={<Borrower />}></Route>
         <Route path="Tpcs" element={<BorrowerView />}></Route> */}
         {/* <Route path="Bags/:itemId" element={<ProductPagebag />}></Route>

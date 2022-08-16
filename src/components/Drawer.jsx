@@ -5,18 +5,16 @@ import {
   Flex,
   useDisclosure,
   DrawerHeader,
-  LinkBox,
   DrawerOverlay,
   Image,
   Text,
   Button,
-  HStack,
   Icon,
 } from "@chakra-ui/react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const DrawerComponent = (props) => {
-  const { isOpen, onClose } = useDisclosure();
+  const { onClose } = useDisclosure();
   return (
     <Drawer
       isOpen={props.drawerState}

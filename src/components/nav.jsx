@@ -1,4 +1,4 @@
-import { Box, Container, Image, Text, Flex } from "@chakra-ui/react";
+import { Image, Text, Flex } from "@chakra-ui/react";
 import { useState } from "react";
 import DrawerComponent from "./Drawer";
 

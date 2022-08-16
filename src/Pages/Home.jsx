@@ -1,14 +1,12 @@
 import React from "react";
 import Data from "./LoanData";
 import { useState } from "react";
-import LoanAppList from "./LoanAppList";
+
 import {
   Table,
   TableContainer,
-  Th,
   Thead,
   Tr,
-  Flex,
   Td,
   Tbody,
   TabList,
@@ -17,7 +15,6 @@ import {
 } from "@chakra-ui/react";
 
 const Home = () => {
-  const [info, setInfo] = useState(Data);
   return (
     <>
       <Tabs variant="unstyled" width="100%" p="5">
