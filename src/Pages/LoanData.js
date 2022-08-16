@@ -1,0 +1,58 @@
+const smeandstartup = [
+  {
+    id: "1",
+    name: "Ladi Poultry",
+    amount: "N5,000,000",
+    term: "4 years",
+    intrestRate: "26%",
+    rateType: "fixed",
+    amountPayable: "N6,300,000",
+  },
+  {
+    id: "2",
+    name: "Gidi Farm",
+    amount: "N5,000,000",
+    term: "4 years",
+    intrestRate: "26%",
+    rateType: "fixed",
+    amountPayable: "N6,300,000",
+  },
+  {
+    id: "3",
+    name: "Lax Technologies",
+    amount: "N5,000,000",
+    term: "4 years",
+    intrestRate: "26%",
+    rateType: "fixed",
+    amountPayable: "N6,300,000",
+  },
+  {
+    id: "4",
+    name: "Banif Enterprise",
+    amount: "N5,000,000",
+    term: "4 years",
+    intrestRate: "26%",
+    rateType: "fixed",
+    amountPayable: "N6,300,000",
+  },
+  {
+    id: "5",
+    name: "ColliNuts",
+    amount: "N5,000,000",
+    term: "4 years",
+    intrestRate: "26%",
+    rateType: "fixed",
+    amountPayable: "N6,300,000",
+  },
+  {
+    id: "6",
+    name: "FreeRetail",
+    amount: "N5,000,000",
+    term: "4 years",
+    intrestRate: "26%",
+    rateType: "fixed",
+    amountPayable: "N6,300,000",
+  },
+];
+
+export default smeandstartup;
