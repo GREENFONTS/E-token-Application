@@ -1,0 +1,56 @@
+.header {
+  background-color: #1c940f;
+  height: 90px;
+}
+.header-cont {
+  margin: 0px 50px;
+  display: flex;
+  color: white;
+}
+.main-cont {
+  margin: 10px 50px;
+}
+.dash-cont {
+  display: flex;
+  width: 90%;
+}
+.dash-cont div {
+  flex: 1;
+  display: -webkit-box;
+}
+.dash-header {
+  display: flex;
+}
+.dash-header div {
+  flex: 1;
+  text-align: center;
+  background-color: #1c940f;
+  color: white;
+}
+.dash-header-one {
+  text-align: center;
+  background-color: #1c940f;
+  color: white;
+  width: 33%;
+  padding: 0.5px 0px;
+}
+.table {
+  display: flex;
+  margin-top: 30px;
+  border-bottom: 1px solid rgb(224, 216, 216);
+}
+.table div {
+  flex: 1;
+}
+.list-disp {
+  display: flex;
+}
+.list-disp p {
+  flex: 1;
+}
+.green {
+  background-color: #1c940f;
+}
+.dashboard {
+  display: none;
+}
