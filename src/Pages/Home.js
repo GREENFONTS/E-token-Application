@@ -1,5 +1,9 @@
 import React from "react";
 import Data from "./LoanData";
+import { useState } from "react";
+import image1 from "../images/Frame 3119.png";
+import image2 from "../images/Vector.png";
+import LoanAppList from "./LoanAppList";
 
 const Home = () => {
   const [info, setInfo] = useState(Data);
