@@ -1,13 +1,18 @@
-import "./App.css";
+// import "./App.css";
 import Home from "./Pages/Home";
-function App() {
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import LoanAppView from "./Pages/LoanAppView";
+import { ChakraProvider } from "@chakra-ui/react";
+
+const App = () => {
   return (
+    
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="Gowns" element={<LoanAppView />}></Route>
-        <Route path="Polo" element={<Borrower />}></Route>
-        <Route path="Tpcs" element={<BorrowerView />}></Route>
+        {/* <Route path="Polo" element={<Borrower />}></Route>
+        <Route path="Tpcs" element={<BorrowerView />}></Route> */}
         {/* <Route path="Bags/:itemId" element={<ProductPagebag />}></Route>
         <Route path="Polo/:itemId" element={<ProductPagepolo />}></Route>
         <Route path="Gowns/:itemId" element={<ProductPage />}></Route>
