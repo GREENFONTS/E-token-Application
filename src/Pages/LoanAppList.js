@@ -19,7 +19,7 @@ function LoanAppList({ info }) {
               <p>{intrestRate}</p>
               <p>{rateType}</p>
               <p>{amountPayable}</p>
-              <Link className="view" to={"/testing"}>
+              <Link className="view" to={`/${id}`}>
                 view
               </Link>
             </div>
