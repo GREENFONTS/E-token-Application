@@ -10,10 +10,13 @@ import {
   Text,
   Button,
   Icon,
+  Link,
 } from "@chakra-ui/react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const DrawerComponent = (props) => {
+  const nav = useNavigate();
   const { onClose } = useDisclosure();
   return (
     <Drawer
@@ -54,8 +57,19 @@ const DrawerComponent = (props) => {
           </Flex>
         </DrawerHeader>
         <DrawerBody p="0" m="0">
-          <Flex p="5" justifyContent="space-between" textColor="white" alignItems="center">
-            <Flex alignItems="center">
+          <Flex
+            p="5"
+            justifyContent="space-between"
+            textColor="white"
+            alignItems="center"
+          >
+            <Flex
+              alignItems="center"
+              onClick={() => {
+                nav("/");
+                props.setDrawerState(false);
+              }}
+            >
               <Image
                 src={"/images/Vector.png"}
                 alt="logo"
@@ -67,7 +81,12 @@ const DrawerComponent = (props) => {
             <Icon as={MdOutlineKeyboardArrowRight} fontSize="20px" />
           </Flex>
 
-          <Flex p="5" justifyContent="space-between" textColor="white" alignItems="center">
+          <Flex
+            p="5"
+            justifyContent="space-between"
+            textColor="white"
+            alignItems="center"
+          >
             <Flex alignItems="center">
               <Image
                 src={"/images/Group.png"}
@@ -80,8 +99,19 @@ const DrawerComponent = (props) => {
             <Icon as={MdOutlineKeyboardArrowRight} fontSize="20px" />
           </Flex>
 
-          <Flex p="5" justifyContent="space-between" textColor="white" alignItems="center">
-            <Flex alignItems="center">
+          <Flex
+            p="5"
+            justifyContent="space-between"
+            textColor="white"
+            alignItems="center"
+          >
+            <Flex
+              alignItems="center"
+              onClick={() => {
+                nav("/LoanDashboard");
+                props.setDrawerState(false);
+              }}
+            >
               <Image
                 src={"/images/Vector.png"}
                 alt="logo"
@@ -93,7 +123,12 @@ const DrawerComponent = (props) => {
             <Icon as={MdOutlineKeyboardArrowRight} fontSize="20px" />
           </Flex>
 
-          <Flex p="5" justifyContent="space-between" textColor="white" alignItems="center">
+          <Flex
+            p="5"
+            justifyContent="space-between"
+            textColor="white"
+            alignItems="center"
+          >
             <Flex alignItems="center">
               <Image
                 src={"/images/Vector.png"}
@@ -106,7 +141,12 @@ const DrawerComponent = (props) => {
             <Icon as={MdOutlineKeyboardArrowRight} fontSize="20px" />
           </Flex>
 
-          <Flex p="5" justifyContent="space-between" textColor="white" alignItems="center">
+          <Flex
+            p="5"
+            justifyContent="space-between"
+            textColor="white"
+            alignItems="center"
+          >
             <Flex alignItems="center">
               <Image
                 src={"/images/Vector.png"}
@@ -119,7 +159,12 @@ const DrawerComponent = (props) => {
             <Icon as={MdOutlineKeyboardArrowRight} fontSize="20px" />
           </Flex>
 
-          <Flex p="5" justifyContent="space-between" textColor="white" alignItems="center">
+          <Flex
+            p="5"
+            justifyContent="space-between"
+            textColor="white"
+            alignItems="center"
+          >
             <Flex alignItems="center">
               <Image
                 src={"/images/Vector.png"}
@@ -132,7 +177,12 @@ const DrawerComponent = (props) => {
             <Icon as={MdOutlineKeyboardArrowRight} fontSize="20px" />
           </Flex>
 
-          <Flex p="5" justifyContent="space-between" textColor="white" alignItems="center">
+          <Flex
+            p="5"
+            justifyContent="space-between"
+            textColor="white"
+            alignItems="center"
+          >
             <Flex alignItems="center">
               <Image
                 src={"/images/Vector.png"}
