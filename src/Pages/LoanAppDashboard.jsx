@@ -3,19 +3,16 @@ import {
   Flex,
   Box,
   Text,
-  Table,
-  TableContainer,
-  Thead,
-  Tr,
-  Td,
-  Tbody,
+  Checkbox,
+  VStack,
+  Button
 } from "@chakra-ui/react";
 import SmallBox from "../components/smallBox";
 
 const LoanAppDashboard = () => {
   return (
     <>
-      <Box p="5" m="3">
+      <Box p="5" ml="3" fontWeight="600">
         <Box
           bgColor="#1c940f"
           width="25%"
@@ -73,9 +70,33 @@ const LoanAppDashboard = () => {
 
           </Flex>
 
-          <Box p="5">
+          <Box p="5" ml="4">
             <Flex>
               <Text color="#1c940f" fontWeight={"600"} fontSize="17px">Documentation Provided</Text>
+            </Flex>
+
+            <VStack spacing="5" mt="5" alignItems="flex-start">
+              <Flex>
+                <Checkbox colorScheme="whatsapp" isChecked={true}>Copy of Coporate Affairs Commission (CAC) registration certificate</Checkbox>
+              </Flex>
+
+              <Flex>
+                <Checkbox colorScheme="whatsapp" isChecked={true}>Invoice for goods to be pruchased if applicable</Checkbox>
+              </Flex>
+
+              <Flex>
+                <Checkbox colorScheme="whatsapp" isChecked={true}>Executed board resolution to borrow and detailing who 
+                will operate the account/loan (for limited liability companies only)</Checkbox>
+              </Flex>
+
+              <Flex>
+                <Checkbox colorScheme="whatsapp" isChecked={true}>Evidence of tenancy/ownership of business location 
+                (this includes copies of rent reciepts, title documents,</Checkbox>
+              </Flex>
+            </VStack>
+
+            <Flex alignItems="center" justifyContent="center" mt="5" >
+              <Button p="5" bgColor="#1c940f" color="white" fontSize="17px" w="12%" h="50px"> Approve</Button>
             </Flex>
           </Box>
 
