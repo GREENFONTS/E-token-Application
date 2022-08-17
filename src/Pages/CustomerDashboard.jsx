@@ -75,6 +75,23 @@ const CustomerDashBoard = () => {
             </Button>
           </Flex>
 
+          <Flex
+            w="100%"
+            p="3"
+            mb="2"
+            justifyContent="space-between"
+            alignItems="center"
+          >
+            <Flex>
+              <Text mr="5">S/N </Text>
+              <Text> Name</Text>
+            </Flex>
+            <Text>Title</Text>
+            <Text>Date</Text>
+            <Text>Amount</Text>
+            <Text></Text>
+          </Flex>
+
           <Box mt="2">
             <CustomerList number={1} text={"Purchase of Land"} />
 

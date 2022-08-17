@@ -13,9 +13,12 @@ const CustomerList = ({ number, text }) => {
       alignItems="center"
     >
       <Flex>
-        <Text mr="5"> {number}</Text>
-        <Text> {text}</Text>
+        <Text mr="5"> 0{number}</Text>
+        <Text> To Addie</Text>
       </Flex>
+      <Text>{text}</Text>
+      <Text>28th August, 2022</Text>
+      <Text>N5,000,000</Text>
       <Button bgColor="#1c940f" color="white" w="6%" h="30px" fontSize="12px">
         View
       </Button>
