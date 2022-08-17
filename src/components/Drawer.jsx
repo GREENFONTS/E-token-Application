@@ -13,10 +13,11 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const DrawerComponent = (props) => {
   const nav = useNavigate();
+  const {pathname} = useLocation()
   const { onClose } = useDisclosure();
   return (
     <Drawer
@@ -62,6 +63,9 @@ const DrawerComponent = (props) => {
             justifyContent="space-between"
             textColor="white"
             alignItems="center"
+            borderLeft={
+              pathname === "/" ? "2px solid white" : "none"
+            }
           >
             <Flex
               alignItems="center"
@@ -69,6 +73,8 @@ const DrawerComponent = (props) => {
                 nav("/");
                 props.setDrawerState(false);
               }}
+             
+              _hover={{ cursor: "pointer" }}
             >
               <Image
                 src={"/images/Vector.png"}
@@ -86,15 +92,25 @@ const DrawerComponent = (props) => {
             justifyContent="space-between"
             textColor="white"
             alignItems="center"
+            borderLeft={
+              pathname === "/Borrowers" ? "2px solid white" : "none"
+            }
           >
-            <Flex alignItems="center">
+            <Flex
+              alignItems="center"
+              onClick={() => {
+                nav("/Borrowers");
+                props.setDrawerState(false);
+              }}
+              _hover={{ cursor: "pointer" }}
+            >
               <Image
                 src={"/images/Group.png"}
                 alt="logo"
                 boxSize="20px"
                 mr="3"
               />
-              <Text fontSize="20px">Borrowing</Text>
+              <Text fontSize="20px">Borrowers</Text>
             </Flex>
             <Icon as={MdOutlineKeyboardArrowRight} fontSize="20px" />
           </Flex>
@@ -104,14 +120,19 @@ const DrawerComponent = (props) => {
             justifyContent="space-between"
             textColor="white"
             alignItems="center"
+            borderLeft={
+              pathname === "/Loans" ? "2px solid white" : "none"
+            }
           >
             <Flex
               alignItems="center"
               onClick={() => {
-                nav("/LoanDashboard");
+                nav("/Loans");
                 props.setDrawerState(false);
               }}
+              _hover={{ cursor: "pointer" }}
             >
+
               <Image
                 src={"/images/Vector.png"}
                 alt="logo"

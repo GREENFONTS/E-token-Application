@@ -1,5 +1,4 @@
 import React from "react";
-import Data from "./LoanData";
 import {
   Table,
   TableContainer,
@@ -11,15 +10,11 @@ import {
   Tabs,
   Tab,
 } from "@chakra-ui/react";
-import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { dispatch } from "../redux/store";
-import { setCurrentData } from "../redux/features/Utils/utils";
+import Data from "./LoanData";
 
-const Home = () => {
-  const {data} = useSelector(state => state.utils)
-  const nav = useNavigate()
-  
+const BorrowersDashboard = () => {
+  const nav = useNavigate();
   return (
     <>
       <Tabs variant="unstyled" width="100%" p="5">
@@ -71,19 +66,20 @@ const Home = () => {
             </Tr>
           </Thead>
           <Tbody>
-            {data.map((data) => {
+            {Data.map((data) => {
               return (
                 <Tr key={data.name}>
                   <Td>{data.name}</Td>
                   <Td>{data.amount}</Td>
                   <Td>{data.term}</Td>
-                  <Td>{data.interestRate}</Td>
+                  <Td>{data.intrestRate}</Td>
                   <Td>{data.rateType}</Td>
                   <Td>{data.amountPayable}</Td>
-                  <Td color="red" _hover={{ cursor: "pointer" }} onClick={() => {
-                    dispatch(setCurrentData(data))
-                    nav("/Loans")
-                  }}>
+                  <Td
+                    color="red"
+                    _hover={{ cursor: "pointer" }}
+                    onClick={() => nav("/Customer")}
+                  >
                     View
                   </Td>
                 </Tr>
@@ -95,5 +91,4 @@ const Home = () => {
     </>
   );
 };
-
-export default Home;
+export default BorrowersDashboard;
