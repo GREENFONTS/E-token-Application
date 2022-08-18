@@ -74,7 +74,7 @@ const CustomerList = ({ number, text }) => {
                 >
                   <AlertIcon boxSize="40px" mr={0} />
                   <AlertTitle mt={4} mb={1} fontSize="lg">
-                    Your Transaction was successful
+                    Transaction Details
                   </AlertTitle>
                 </Alert>
               </Box>
