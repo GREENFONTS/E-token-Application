@@ -20,8 +20,8 @@ import {
   Icon,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import {BsPrinter} from "react-icons/bs";
-import {TbRecycle} from "react-icons/tb";
+import { BsPrinter } from "react-icons/bs";
+import { TbRecycle } from "react-icons/tb";
 
 const CustomerList = ({ number, text }) => {
   const { isOpen, onClose } = useDisclosure();
@@ -58,7 +58,7 @@ const CustomerList = ({ number, text }) => {
       <Modal isOpen={modalShow} onClose={onClose} size="xl">
         <ModalOverlay />
         <ModalContent>
-          <ModalCloseButton />
+          <ModalCloseButton onClick={() => setModalShow(false)} />
           <ModalBody>
             <Flex w="100%" justifyContent="center" alignItems="center" mt="5">
               <Box>
@@ -140,7 +140,6 @@ const CustomerList = ({ number, text }) => {
                     fontSize="12px"
                     borderRadius="3px"
                     mt="3"
-                    
                   >
                     <Icon as={BsPrinter} mr="2" /> PRINT RECIEPT
                   </Button>
@@ -153,7 +152,7 @@ const CustomerList = ({ number, text }) => {
                     fontSize="12px"
                     borderRadius="3px"
                     mt="3"
-                    border="1px solid #1c940f"                    
+                    border="1px solid #1c940f"
                   >
                     <Icon as={TbRecycle} mr="2" /> REPAY BILL
                   </Button>
