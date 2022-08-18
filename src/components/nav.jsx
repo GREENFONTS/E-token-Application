@@ -8,6 +8,8 @@ const NavComponent = () => {
   const [drawerState, setDrawerState] = useState(false)
   return (
     <>
+    {pathname != "/SignUp" && pathname != "/SignIn" &&
+    <>
       <Flex
         bgColor="#1c940f"
         boxShadow="base"
@@ -23,8 +25,8 @@ const NavComponent = () => {
             alt="logo"
             mr="5"
           />
-          <Text color="white" fontSize="20px">
-            Central Bank Of Nigeria
+          <Text color="white" fontSize="25px" fontWeight="600">
+            Taki Finance
           </Text>
         </Flex>
       </Flex>
@@ -43,6 +45,9 @@ const NavComponent = () => {
         </Flex>
       </Flex>
       <DrawerComponent drawerState={drawerState} setDrawerState={setDrawerState}/>
+      </>
+}
+      
     </>
   );
 };
