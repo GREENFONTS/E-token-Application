@@ -40,7 +40,7 @@ const NavComponent = () => {
         </Flex>
         <Flex width="40%" justifyContent="center">
           <Text fontWeight="600" fontSize="25px">
-            {pathname === "/Customer" ? "Customer Dashboard" : "Loan application dashboard"}
+            {pathname === "/Customer" ? "Customer Dashboard" : pathname === "/Borrowers" ? "Borrower Dashboard" : "Loan application dashboard"}
           </Text>
         </Flex>
       </Flex>
